@@ -96,14 +96,15 @@ ul li {
 
 .column {
   display: inline-flex;
-  padding: 1.75em 0em 1.75em 1em;
+  align-items: center;
+  padding: 1.5em 0em 1.5em 1em;
   border-left: 2px solid #e6e6e6;
   border-bottom: 2px solid #e6e6e6;
   transition: all 500ms ease 50ms;
 }
 
 .last {
-  border-bottom: 0px solid #d9d9d9;
+  border-bottom: none;
 }
 
 .column:hover {
@@ -206,6 +207,7 @@ ul li {
 .course-container {
   width: 100%;
   background-color: #e6e6e6;
+  padding-bottom: 2em;
 }
 
 .course-container h1 {
@@ -228,7 +230,7 @@ ul li {
 }
 
 .course {
-  height: 20em;
+  height: 19em;
   width: 30%;
   padding-bottom: 2em;
   margin-bottom: 2em;
@@ -241,7 +243,7 @@ ul li {
 }
 
 .course h2 {
-  margin: 1em;
+  margin: 1em 0 0 0.6em;
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -254,4 +256,42 @@ ul li {
   font-size: 1em;
   margin: 1em;
   line-height: 1.4em;
+}
+
+/* ---- Thesis exhibit section ---- */
+.thesis-container {
+  width: 100%;
+  display: flex;
+}
+
+.thesis-heading {
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+.left video {
+  width: 100%;
+}
+
+.thesis-container .right .column {
+  border: none;
+}
+
+.thesis-container .left h3 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* --- Footer incoming --- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.75em;
+  border-top: 1px solid #e6e6e6;
+  font-size: 0.75em;
 }
