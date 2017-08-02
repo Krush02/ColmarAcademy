@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -15,7 +16,7 @@
   <body>
     <!-- Header & Nav Bar -->
     <header>
-      <nav>
+      <nav class="mobile">
         <div class="logo">
           <img src="./resources/images/ic_home.svg">
           <span>Colmar</span><span id="grey">Academy</span>
@@ -28,12 +29,16 @@
             <li><a href="#">Sign in</a></li>
           </ul>
           <ul class="mobile-nav">
+            <li><a href="#"><img src="./resources/images/logo.png"></a></li>
+            <li><a href="#"><img src="./resources/images/onCampus.png"></a></li>
+            <li><a href="#"><img src="./resources/images/online.png"></a></li>
+            <li><a href="#"><img src="./resources/images/login.png"></a></li>
           </ul>
         </div>
       </nav>
 
       <!-- Jumbotron! -->
-      <div class="jumbotron">
+      <div class="jumbotron" id="jumbo-mobile">
         <div class="left">
           <img src="./resources/images/banner.jpg">
         </div>
@@ -47,32 +52,35 @@
       </div>
 
       <!-- First Content Area -->
-      <div class="main-container">
+      <div class="main-container" id="container-mobile">
         <div class="left">
           <img src="./resources/images/information-main.jpg">
           <h2>It doesn't hurt to keep practicing</h2>
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           <h5>Emanuel, Sr Strategist at Hiring.com</h5>
         </div>
-        <div class="right">
-          <div class="column">
-            <img src="./resources/images/information-orientation.jpg">
+        <div class="right" id="right-mobile">
+          <div class="column" id="column-mobile">
+            <img id="invis" src="./resources/images/information-orientation.jpg">
+            <img id="img-mobile" src="./resources/images/information-orientation-mobile.jpg">
             <div class="column-text">
               <h2>Orientation date</h2>
               <h5>Tue 10/11 & Wed 10/12: 8am-3pm</h5>
               <p><a href="#">Read more</a></p>
             </div>
           </div>
-          <div class="column">
-            <img src="./resources/images/information-campus.jpg">
+          <div class="column" id="column-mobile">
+            <img id="invis" src="./resources/images/information-campus.jpg">
+            <img id="img-mobile" src="./resources/images/information-campus-mobile.jpg">
             <div class="column-text">
               <h2>Our Campus</h2>
               <h5>Find your nearest campus</h5>
               <p><a href="#">Read more</a></p>
             </div>
           </div>
-          <div class="column last">
-            <img src="./resources/images/information-guest-lecture.jpg">
+          <div class="column last" id="column-mobile">
+            <img id="invis" src="./resources/images/information-guest-lecture.jpg">
+            <img id="img-mobile" src="./resources/images/information-guest-lecture-mobile.jpg">
             <div class="column-text">
               <h2>Our guest lecture</h2>
               <h5>Join a keynote with Oliver Sack about music in medical treatment</h5>
@@ -83,14 +91,23 @@
       </div>
 
       <!-- Course info below -->
-      <div class="course-container">
+      <div class="course-container" id="course-container-mobile">
         <h1>Start Learning</h1>
-        <div class="courses">
+        <div class="courses" id="courses">
           <div class="course">
             <img src="./resources/images/course-software.jpg">
             <h2>Software Engineering</h2>
             <h5>COURSES</h5>
             <p>Web Development, Mobile Development, iOT, APIs</p>
+          </div>
+          <div class="tab">
+            <input id="tab-one" type="checkbox" name="tabs">
+            <label for="tab-one">Software Engineering</label>
+              <div class="tab-content">
+                <img src="./resources/images/course-software.jpg">
+                <h5>COURSES</h5>
+                <p>Web Development, Mobile Development, iOT, APIs</p>
+              </div>
           </div>
           <div class="course">
             <img src="./resources/images/course-computer-art.jpg">
@@ -98,11 +115,29 @@
             <h5>COURSES</h5>
             <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
           </div>
+          <div class="tab">
+            <input id="tab-two" type="checkbox" name="tabs">
+            <label for="tab-two">Computer Art</label>
+              <div class="tab-content">
+                <img src="./resources/images/course-computer-art.jpg">
+                <h5>COURSES</h5>
+                <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+              </div>
+          </div>
           <div class="course">
             <img src="./resources/images/course-design.jpg">
             <h2>Design</h2>
             <h5>COURSES</h5>
             <p>User Experience Design, User Research, Visual Design</p>
+          </div>
+          <div class="tab">
+            <input id="tab-three" type="checkbox" name="tabs">
+            <label for="tab-three">Design</label>
+              <div class="tab-content">
+                <img src="./resources/images/course-design.jpg">
+                <h5>COURSES</h5>
+                <p>User Experience Design, User Research, Visual Design</p>
+              </div>
           </div>
           <div class="course">
             <img src="./resources/images/course-data.jpg">
@@ -110,11 +145,29 @@
             <h5>COURSES</h5>
             <p>Data Science, Big Data, SQL, Data Visualization</p>
           </div>
+          <div class="tab">
+            <input id="tab-four" type="checkbox" name="tabs">
+            <label for="tab-four">Data</label>
+              <div class="tab-content">
+                <img src="./resources/images/course-data.jpg">
+                <h5>COURSES</h5>
+                <p>Data Science, Big Data, SQL, Data Visualization</p>
+              </div>
+          </div>
           <div class="course">
             <img src="./resources/images/course-business.jpg">
             <h2>Business</h2>
             <h5>COURSES</h5>
             <p>Product Development, Business Development, Startup</p>
+          </div>
+          <div class="tab">
+            <input id="tab-five" type="checkbox" name="tabs">
+            <label for="tab-five">Business</label>
+              <div class="tab-content">
+                <img src="./resources/images/course-business.jpg">
+                <h5>COURSES</h5>
+                <p>Product Development, Business Development, Startup</p>
+              </div>
           </div>
           <div class="course">
             <img src="./resources/images/course-marketing.jpg">
@@ -122,12 +175,21 @@
             <h5>COURSES</h5>
             <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
+          <div class="tab">
+            <input id="tab-six" type="checkbox" name="tabs">
+            <label for="tab-six">Marketing</label>
+              <div class="tab-content">
+                <img src="./resources/images/course-marketing.jpg">
+                <h5>COURSES</h5>
+                <p>Analytics, Content Marketing, Mobile Marketing</p>
+              </div>
+          </div>
         </div>
       </div>
 
       <!-- Thesis Exhibit -->
       <div class="thesis-heading"><h2>Thesis Exhibit</h2></div>
-      <div class="thesis-container">
+      <div class="thesis-container" id="thesis-mobile">
         <div class="left">
           <video src="./resources/videos/thesis.mp4" type="video/mp4" autoplay loop controls></video>
           <h3>Reimagine urban</h3>
@@ -156,7 +218,7 @@
       <!-- Footer section -->
       <footer>
         <span><i class="fa fa-copyright" aria-hidden="true"></i> 2016 Colmar Academy. All rights reserved.</span>
-        <span><a href="#">Terms </a><a href="#">Privacy</a></span>
+        <span id="invis"><a href="#">Terms </a><a href="#">Privacy</a></span>
       </footer>
 
   </body>
